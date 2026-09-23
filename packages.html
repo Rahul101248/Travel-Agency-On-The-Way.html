@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - ON THE WAY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">ON THE WAY</div>
+
+    <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</nav>
+
+<section class="hero">
+    <h1>Our Tour Packages</h1>
+    <p>Find your dream destination</p>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Destination..."
+        onkeyup="searchPackage()"
+    >
+
+    <h3 id="notFoundMessage"></h3>
+</section>
+
+<section class="destinations">
+
+    <div class="card-container">
+
+        <div class="card package-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcJrF8SppszunQsqF_UQlb2woc88zd7L24li-XXj7gjA&s=10" alt="bandarban">
+            <h3>Bandarban</h3>
+            <p>Price: ৳7500</p>
+
+            <button
+                class="btn"
+                onclick="viewDetails('Bandarban')">
+                View Details
+            </button>
+        </div>
+
+        <div class="card package-card">
+            <img src="https://www.womenscorner.com.bd/media/imgAll/2020January/sylhet-20200617141611.jpg" alt="sylhet">
+            <h3>Sylhet</h3>
+            <p>Price: ৳5500</p>
+
+            <button
+                class="btn"
+                onclick="viewDetails('Sylhet')">
+                View Details
+            </button>
+        </div>
+
+        <div class="card package-card">
+            <img src="https://huntingworldbeauty.com/wp-content/uploads/2025/01/Rangamati-kaptai--1024x768.jpeg " alt="Rangamati">
+            <h3>Rangamati</h3>
+            <p>Price: ৳5000</p>
+
+            <button
+                class="btn"
+                onclick="viewDetails('Rangamati')">
+                View Details
+            </button>
+        </div>
+
+        <div class="card package-card">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2024/01/16170702/tiger.jpg?tr=w-1200,q-60" alt="sundarbans">
+            <h3>Sundarbans</h3>
+            <p>Price: ৳6500</p>
+
+            <button
+                class="btn"
+                onclick="viewDetails('Sundarbans')">
+                View Details
+            </button>
+        </div>
+
+        <div class="card package-card">
+            <img src="https://media.istockphoto.com/id/171579629/photo/beautiful-beach-resort.jpg?s=612x612&w=0&k=20&c=-C392PLCEikv74vaaOwko38LeSZzzeav2gxAFZMAZuc=" alt="CoxsBazar">
+            <h3>CoxsBazar</h3>
+            <p>Price: ৳8000</p>
+
+            <button
+                class="btn"
+                onclick="viewDetails('CoxsBazar')">
+                View Details
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>ON THE WAY</h3>
+    <p>Travel With Confidence</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+nav{
+    background:#1fb10c;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-btn{
+    display:none;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    background:#ffcc00;
+    color:black;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:#0b3d62;
+    color:white;
+}
+
+.hero h1{
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+/* Cards */
+
+.destinations{
+    width:90%;
+    margin:40px auto;
+}
+
+.destinations h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    padding-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px;
+}
+
+.card p{
+    margin:10px;
+}
+
+/* Forms */
+
+.form-container,
+.login-container,
+.payment-container,
+.contact-container,
+.reviews-container,
+.dashboard-container{
+    width:90%;
+    max-width:800px;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    cursor:pointer;
+}
+
+/* About */
+
+.about-header{
+    background:#0b3d62;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.about-section{
+    width:90%;
+    margin:40px auto;
+}
+
+.about-card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#0b3d62;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .card{
+        width:100%;
+    }
+}
